@@ -11,24 +11,7 @@ import math
 import pexpect
 
 # count the arguments
-
-
-if len(sys.argv) < 2:
-    print "example:"
-    print "   aAccel5Hz.py 00:06:66:F2:AF:E9"   # To assign rfcoom0, "sudo rfcomm bind 0 <MAC address> <- 00:06:66:F2:AF:E9
-else:
-    IMU_MAC_ADDRESS = sys.argv[1]
-
-
-'''
-
-arguments = len(sys.argv) - 1
-if arguments != 0:
-	IMU_MAC_ADDRESS = sys.argv[1]
-else:
-	IMU_MAC_ADDRESS = "C9:61:FF:AC:8E:23"
-'''
-IMU_MAC_ADDRESS = "C9:61:FF:AC:8E:23"
+IMU_MAC_ADDRESS = "C9:61:FF:AC:8E:23" # add a mac address of your polar H10.
     
 class polar_h10_read():
     #############################################################
